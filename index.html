@@ -4,11 +4,11 @@
 </head>
 <body>
   <p>Click the button to sort the array!</p>
-  <button onclick="myFunction1()">Sort</button>
+  <button onclick="myFunction1()" id="sortbutton">Sort</button>
   <p id="sort"></p>
 
   <p>Click the button to get the <i>mean</i> of the numbers in the array!</p>
-  <button onclick="myFunction2()">Get the mean</button>
+  <button onclick="myFunction2()" id="meanbutton">Get the mean</button>
   <p id="mean">The mean in the array: </p>
   
   <script>
@@ -19,6 +19,7 @@
     numbers.sort(function(a, b){return a-b});
     document.getElementById("sort").innerHTML = numbers;
   }  
+  document.getElementById("sortbutton").disabled = true;
     
   function getSum(total, num) {
     return total + num;
@@ -29,7 +30,7 @@
     document.getElementById("mean").innerHTML = document.getElementById("mean").innerHTML + x;
   }
   
-  document.getElementById("Get the mean").disabled = true;
+  document.getElementById("meanbutton").disabled = true;
   </script>
 
 </body>
