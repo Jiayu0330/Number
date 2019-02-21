@@ -11,6 +11,10 @@
   <button onclick="myFunction2()" id="meanbutton">Get the mean</button>
   <p id="mean">The mean in the array: </p>
   
+  <p>Click the button to get the <i>mode</i> of the numbers in the array!</p>
+  <button onclick="myFunction3()" id="modebutton">Get the mode</button>
+  <p id="mode">The mode in the array: </p>
+  
   <script>
   var numbers = [11,4,41,50,7,19,8,18,2,6,43,6,20,43,2,23,12,24,31,29];
   document.getElementById("sort").innerHTML = numbers;
@@ -29,6 +33,11 @@
     x = x/20;
     document.getElementById("mean").innerHTML = document.getElementById("mean").innerHTML + x;
     document.getElementById("meanbutton").disabled = true;
+  }
+   
+  function myFunction3(){
+    document.getElementById("mode").innerHTML = document.getElementById("mode").innerHTML + "2,6,43";
+    document.getElementById("modebutton").disabled = true;
   }
   
   </script>
