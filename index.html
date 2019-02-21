@@ -3,19 +3,18 @@
   <title>Number Cruncher</title>
 </head>
 <body>
-  <p>Click the button below!</p>
-  <button onclick="myFunction1()">Get Mean</button>
-  <p>Mean: <span id="mean"></span></p>
+  <p>Click the button to sort the array!</p>
+  <button onclick="myFunction()">Sort</button>
+  <p id="sort"></span></p>
   
   <script>
   var numbers = [11,4,41,50,7,19,8,18,2,6,43,6,20,43,2,23,12,24,31,29];
-
-  function getMean(total, num) {
-  return total + Math.round(num);
-  }
-  function myFunction1(item) {
-  document.getElementById("mean").innerHTML = numbers.reduce(getMean);
-  }
+  document.getElementById("sort").innerHTML = numbers;
+  
+  function myFunction(){
+    numbers.sort();
+    document.getElementById("sort").innerHTML = numbers;
+  }  
   </script>
 
 </body>
