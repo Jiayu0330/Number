@@ -18,8 +18,8 @@
   function myFunction1(){
     numbers.sort(function(a, b){return a-b});
     document.getElementById("sort").innerHTML = numbers;
+    document.getElementById("sortbutton").disabled = true;
   }  
-  document.getElementById("sortbutton").disabled = true;
     
   function getSum(total, num) {
     return total + num;
@@ -28,9 +28,9 @@
     var x = numbers.reduce(getSum);
     x = x/20;
     document.getElementById("mean").innerHTML = document.getElementById("mean").innerHTML + x;
+    document.getElementById("meanbutton").disabled = true;
   }
   
-  document.getElementById("meanbutton").disabled = true;
   </script>
 
 </body>
